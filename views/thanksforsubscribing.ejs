@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/thanksforsubscribing.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>thanks for subscribing</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+      <a href="./" class="logo"><img src="../images/blue-logo2.png"></a>
+      <ul class="main-nav" id="js-menu">
+        <li><a href="./" class="nav-links active-btn">Find an Apartment</a></li>
+        <li><a href="./about" class="nav-links">Why Choose Oasis</a></li>
+        <li><a href="./faq" class="nav-links">FAQ</a></li>
+        <li><a href="./agentSignup" class="nav-links agent-link">Become an Agent</a></li>
+        <li><a href="./profile" class="nav-links sign-btn">Sign in</a></li>
+        <li><a href="./createacc" class="nav-links create-btn">Create Account</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="left">
+    <h1> Thanks </h1>
+    <h1>for subscribing</h1>
+    <p>You have successfully subscribed to receive our letters. we promise not to spam your mailbox!</p>
+    <a href="./" class="big-btn">Return back home</a>
+ </div>
+ <div class="mobile">
+    <h1> Thanks for subscribing</h1>
+    <p>You have successfully subscribed to receive our newsletter. we promise not to spam your mailbox! </p>
+    <a href="./" class="big-btn">Return back home</a>
+ </div>
+  
+ <div class="img-mobile">
+  <img class="img" src="../images/thanks.svg" alt="success">
+</div>
+    
+    <div class="right">
+      <img src="../images/thanks.svg" alt="success">
+    </div>
+    <script>
+        let mainNav = document.getElementById("js-menu");
+        let navBarToggle = document.getElementById("js-navbar-toggle");
+
+        navBarToggle.addEventListener("click", function() {
+        mainNav.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
+
+   

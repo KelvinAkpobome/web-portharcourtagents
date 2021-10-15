@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: Lato, sans-serif;
+    background-color: rgb(42, 96, 243);
+  }
+  
+  .navbar {
+    font-size: 18px;
+    background-color:transparent ;
+    border: none;
+    padding-bottom: 10px;
+  }
+  
+  .main-nav {
+    list-style-type: none;
+    display: none;
+    padding-bottom: 10px;
+  }
+  .active{
+    padding-bottom: 0px;
+}
+.agent-link{
+  color: #EF5DA8 !important;
+}
+.sign-btn{
+  color: #1768f5 !important;
+  background-color: white;
+  padding: 8px;
+  border-radius: 2px;
+  border:1px solid #0146B9;
+  width: 10em;
+}
+.create-btn{
+  color: #4200f7 !important;
+  background-color: rgb(250, 250, 250);
+  padding: 8px;
+  border-radius: 2px;
+}
+.active-btn{
+  padding-bottom: 5px;
+  border-bottom: 3px solid rgb(243, 243, 243) ;
+} 
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 5px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+   margin: 0;
+  }
+
+  .nav-links {
+   margin-left: 50px;
+   font-size: 15px;
+   margin-right: 2em;
+  }
+  .mobile{
+      display: none;
+  }
+  
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+  .logo img {
+    width: 100px;
+    height: auto;
+}
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+@media screen and (max-width:768px) {
+  .main-nav li{
+    padding: 20px;
+  }
+  .navbar-toggle {
+    color: #f7f7f7;
+  }
+  .right{
+    display: none;
+  }
+  .left{
+    display: none;
+}
+.mobile{
+    margin-left: 2em;
+   margin-top: 4em;
+   width: 100%;
+
+}
+h1{
+    
+  color: #012551;
+  font-size: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p{
+    padding-top: 1px;
+    padding-bottom: 1em;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+button{
+    padding: 10px;
+    padding-top: 10;
+    color: white;
+    background-color: violet;
+    border-radius: 5px;
+    width: 100%;
+    height: 38px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+  
+  
+  button{
+      padding: 10px;
+      padding-top: 10;
+      color: white;
+      background-color: violet;
+      border-radius: 5px;
+      width: 35%;
+      height: 38px;
+      outline: none;
+      border-radius: 5px;
+      border: none;
+   }
+
+  .footer-items {
+    flex-direction: column;
+  }
+  .items{
+      margin-bottom: 20px;
+  }
+  .copyright{
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.left{
+    padding-top: 11em;
+    padding-left: 6em;
+    width: 40%;
+}
+h1{
+  font-size: 150px;
+  color: #FFFFFF;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 80%;
+    color: #FFFFFF;
+    font-style: rubik, sans-serif;
+
+}
+button{
+    padding: 10px;
+    padding-top: 10;
+    color: white;
+    background-color: violet;
+    border-radius: 5px;
+    width: 35%;
+    height: 38px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+ }
+ button:hover{
+        background-color: rgb(235, 20, 235);
+ }
+ .right{
+     position: absolute;
+     left: 600px;
+     top: 150px;
+ }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/agent-signup.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <title>Agent Signup | Oasis Properties</title>
+</head>
+<body>
+    <div class="container">
+        <a href="./"><img src="../images/logo-signup-agency.svg" alt="logo" class="top-logo"></a>
+
+        <div class="head-text">
+            <h2>Agent Registration</h2>
+            <h4>Agent Details</h4>
+        </div>
+    
+        <div class="sign-up">
+            <h3>Provide Information</h3>
+            <%- include ('partials/messages')  %> 
+            <form  action="/users/register" method="POST" class="form">
+                <div class="left">
+                    <label for="name" >Name
+                        <input type="text" value = "<%= typeof name != 'undefined' ? name : '' %>"  name="name" id="name" class="details">
+                    </label>
+    
+                    <label for="email" >Email Address
+                        <input type="email" value = "<%= typeof email != 'undefined' ? email : '' %>" name="email" id="email" class="details">
+                    </label>
+                    
+                    <label for="number" >Phone Number
+                        <input value = "<%= typeof tel != 'undefined' ? tel : '' %>" name="tel" type="tel" id="number" class="details">
+                    </label>
+                   
+                    <label for="password" >Password 
+                        <input name="password" type="password" id="password" class="details">
+                    </label>
+                </div>
+
+                <div class="right">
+                    <label for="photo" >Upload photo 
+                        <input name="photo" type="file" id="photo" class="details upload">
+                    </label>
+    
+                    <label for="cac">Upload CAC No and certificate 
+                        <input name="cac" type="file" id="cac" class="details upload">
+                    </label>
+    
+                    <label for="I.D">Upload I.D card 
+                        <input name="id" type="file" id="I.D" class="details upload">
+                    </label>
+                </div> 
+
+                <button type= 'submit' class="btn">sign up</button>
+            </form>               
+        </div>
+
+    </div>
+</body>
+</html>

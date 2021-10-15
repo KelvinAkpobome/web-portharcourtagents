@@ -1,0 +1,321 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ :root {
+   --primary-color: #071cdb;
+ }
+ body {
+   background: #fff;
+   max-height: 100vh;
+ }
+ .container {
+   width: 100%;
+   display: flex;
+   height: 100vh;
+   justify-content: center;
+   max-height: 100vh;
+ }
+ .left {
+   width: 50%;
+   background: var(--primary-color);
+   padding: 3em 5em;
+   position: relative;
+   color: #ffffff;
+ }
+ 
+ .left .left-text {
+   margin: 5rem 0 1rem;
+ }
+ .left .left-text h1 {
+   font-family: "Merriweather", serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 3.7rem;
+   line-height: 60px;
+   padding-bottom: 18px;
+ }
+ .left .left-text p {
+   font-family: "Lato", sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 19px;
+   letter-spacing: 0.03em;
+   opacity: 1;
+ }
+ .oasis-large{
+   position: absolute;
+   top: 420px;
+   left: 530px;
+   width: 300px; 
+   opacity: 0.2;
+ }
+ .right{
+   width: 50%;
+   flex: 1;
+   background: #fff;
+   padding: 3em 5em;
+   z-index: 2;
+ }
+ .mobile {
+   display: none;
+ }
+ .sign-up {
+   font-family: "Lato", sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 17px;
+   color: #383838;
+   text-align: end;
+ }
+ a:hover{
+   background-color: rgb(175, 174, 174);
+ }
+ 
+ .right-text {
+   margin: 6rem 0 1rem;
+ }
+ .section-container h2 {
+   font-family: "Merriweather", serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 2rem;
+   line-height: 40px;
+   color: rgb(0, 0, 66);
+ }
+ .section-container p {
+   font-family: "Lato", sans-serif;
+   line-height: 19px;
+   letter-spacing: 0.03em;
+   margin: 0.5em 0;
+   color: #7f7f7f;
+ }
+ .form-section {
+   margin: 1em 0;
+ }
+ .each-label-con {
+   border: 1px solid #d1cccc;
+   padding: 1.5em;
+   margin-bottom: 1em;
+   width: 50%;
+   font-family: "Lato", sans-serif;
+   font-size: 0.875rem;
+   display: flex;
+   align-items: center;
+   color: #7f7f7f;
+ }
+ .each-label-con input {
+   margin: 0.5em;
+ }
+ 
+ .big-btn {
+   padding: 1em 3em;
+   color: white;
+   background: #0146b9;
+   border-radius: 5px;
+   margin: 2em 0;
+   border: none;
+   font-size: 0.85rem;
+   font-family: "Lato", sans-serif;
+   width: 45%;
+   margin-left:1em ;
+ }
+ .big-btn:hover {
+   background-color: #001b66ee;
+   cursor: pointer;
+ }
+ 
+#fg{
+  margin-left: 1em;
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+  font-size: 15px;
+  font-family: rubik, sans-serif;
+}
+ 
+ .input-text {
+   display: flex;
+   /* justify-content: center; */
+   align-items: center;
+   padding: 1em;
+ }
+ 
+ 
+ .input-text input {
+   display: block;
+   padding: 10px 6px;
+   width: 80%;
+   box-sizing: border-box;
+   border: none;
+   border-bottom: 1px solid #646464;
+   color: #555;
+   margin-left: 10px;
+ }
+ .input-text input:focus {
+   outline: none;
+   background-color: rgb(223, 219, 219);
+ }
+ .input-text input:hover {
+   background-color: rgb(223, 219, 219);
+ }
+ .items {
+   position: relative;
+   bottom: 0;
+   left: 0;
+   padding-top: 8em;
+   text-align: end;
+ }
+ .items a {
+   color: #646464;
+   text-decoration: none;
+   margin: 0.8rem;
+   font-family: "Lato", sans-serif;
+   font-size: 14px;
+   line-height: 17px;
+   letter-spacing: 0.03em;
+ }
+ .items a:hover {
+   background-color: rgb(173, 173, 173);
+   color: honeydew;
+   padding: 0.8em;
+ }
+ 
+
+
+
+
+
+
+
+
+ @media (max-width: 1200px) {
+   .big-btn {
+     padding: 1em 1em;
+   }
+   a.big-btn {
+     padding: 1em 1em;
+   }
+ }
+
+
+
+
+
+
+
+
+
+ @media (max-width: 790px) {
+   body {
+     background: var(--primary-color);
+     height: 100vh;
+   }
+   .section-container h2 {
+     font-size: 2rem;
+     line-height: 30px;
+     padding-left: 10px;
+     padding-top: 1em;
+   }
+   .right {
+     display: none;
+   }
+   .left{
+     width: 100%;
+     overflow: hidden;
+     padding: 5em 1em;
+   }
+   .mobile {
+     display: block;
+   }
+   .right.mobile {
+     width: 100%;
+     margin: auto;
+     margin: 0;
+     padding: 1rem;
+     position: relative;
+     z-index: 100;
+   }
+   .right-text {
+     margin: 0rem 0 0rem;
+   }
+   .desktop{
+     display: none;
+   }
+   .logo-con {
+     display: flex;
+     justify-content: center;
+     padding: 0em 0 1.8em 0;
+     margin-top: 0;
+   }
+   .oasis-large{
+     display: none;
+   }
+   
+   .oasis-logo-large {
+     position: absolute;
+     
+     left: 30px;
+     width: 500px;;
+     top: 530px;
+     height: 300px;
+     opacity: 0.2;
+   }
+   #fg{
+     margin-left: 3.2em;
+     text-decoration: none;
+     color: rgb(59, 59, 59);
+     font-size: 17px;
+     font-family: rubik, sans-serif;
+     padding: 10px;
+     font-weight: 600;
+   }
+   #fg:hover{
+     text-decoration: underline;
+   }
+   .big-btn {
+     padding: 10px;
+     font-size: 1rem;
+     margin-top: 1em;
+     margin-left: 3em;
+     width: 65%;
+   }
+   
+   
+   .sign-up.mobile {
+       position: relative;
+     color: white;
+     text-align: center;
+     padding: 1rem;
+     z-index: 100;
+     font-size: 18px;
+   }
+   .sign-up span a{
+     color: #eba2a2e3;
+   }
+
+
+
+
+@media (max-width:375px) {
+     
+   
+    .items a {
+      color: white;
+      font-size: 18px;
+    }
+    .container {
+     display: block;
+    }
+    .items {
+      position: absolute;
+      bottom: 20px;
+      left: 200px;
+     
+     }
+     .input-text input {
+      width: 100%;
+    }
+}

@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #012551;
+}
+body {
+  background: #fff;
+  max-height: 100vh;
+}
+.container {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+.left-part-con {
+  width: 50%;
+  background: var(--primary-color);
+  padding: 3em 5em;
+  position: relative;
+  color: #ffffff;
+}
+.left-part-con .oasis-logo-large {
+  opacity: 0.4;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(150px);
+}
+.left-part-con .left-part-text {
+  margin: 9rem 0 1rem;
+}
+.left-part-con .left-part-text h1 {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 60px;
+}
+.left-part-con .left-part-text p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  opacity: 0.7;
+}
+.right-part-con {
+  width: 50%;
+  flex: 1;
+  background: #fff;
+  padding: 3em 5em;
+  z-index: 2;
+}
+.header-question-con {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #646464;
+  text-align: end;
+}
+.right-part-sec-text {
+  margin: 5rem 0 1rem;
+}
+.section-container h2 {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 40px;
+  color: var(--primary-color);
+}
+.section-container p {
+  font-family: "Lato", sans-serif;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  margin: 0.5em 0;
+  color: #7f7f7f;
+}
+.form-sec {
+  margin-top: 1em;
+}
+.each-label-con {
+  border: 1px solid #d1cccc;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  width: 50%;
+  font-family: "Lato", sans-serif;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  color: #7f7f7f;
+}
+.each-label-con input {
+  margin: 0.5em;
+}
+.next-btn {
+  padding: 1em 3.5em;
+  color: white;
+  background: #0146b9;
+  border-radius: 5px;
+  margin: 2em 0;
+  border: none;
+}
+.big-btn {
+  padding: 1.5em 3em;
+  color: white;
+  background: #0146b9;
+  border-radius: 5px;
+  margin: 2em 0;
+  border: none;
+}
+.choose-btn{
+  display: block;
+  max-width: 300px;
+  padding: 1em 3em;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  background: #fff;
+  border: 1px solid #0146b9;
+  color: #0146b9;
+  text-align: center;
+}
+.choose-btn:hover{
+  background: #0144b913;
+}
+.mobile {
+  display: none;
+}
+@media(max-width:760px){
+  .for-desktop-only {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .right-part-con {
+    position: relative;
+    width: 100%; 
+    background: var(--primary-color);
+    padding: 1em 1em;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  .section-container{
+    text-align: center;
+  }
+  .section-container h2 {
+    padding: 1em;
+    font-size: 1.5rem;
+    padding-bottom: 0;
+  }
+  .section-container p {
+    padding: 0 1.5em;
+  }
+  /* .main-sec-texts{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  .right-part-sec-text{
+    background: #fff;
+    width: 100%;
+    margin: auto;
+    max-width: 500px;
+  }
+  .logo-con {
+    display: flex;
+    justify-content: center;
+    padding: 0em 0 1em 0;
+    margin-top: 0;
+  }
+  .section-container p {
+    font-family: "Lato", sans-serif;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    margin: 0.5em 0;
+    color: #7f7f7f;
+  }
+  .form-sec {
+    margin: 2em 0;
+    padding-bottom: 2em;
+    text-align: center;
+  }
+  .each-label-con {
+    margin: auto;
+    margin-bottom: 1em;
+  }
+  .header-question-con{
+    text-align: center;
+    color: white;
+  }
+  .header-question-con p span a{
+    color: #ffffffad;
+  }
+  .oasis-logo-large-mobile{
+    position: absolute;
+    bottom: 0;
+    width: 800px;
+    opacity: .4;
+    transform: translateY(500px);
+    overflow-x: hidden;
+    z-index: -1;
+  }
+  .choose-btn{
+    margin: auto;
+    margin-bottom: 2em;
+  }
+  
+}
+@media(max-width:450px){
+  .section-container{
+    width: 100%;
+  }
+  
+  .form-sec {
+    margin: 3em 1em;
+    text-align: center;
+  }
+  .each-label-con {
+    width: 80%;
+  }
+  .oasis-logo-large-mobile{
+    position: absolute;
+    bottom: 0;
+    width: 500px;
+    opacity: .4;
+    transform: translateY(200px);
+    overflow-x: hidden;
+    z-index: -1;
+  }
+  .choose-btn{
+    max-width: 200px;
+    text-align: center;
+  }
+}
